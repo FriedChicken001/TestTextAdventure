@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace TestTextAdventureExample
 {
-    internal class Player
+    public class Player
     {
+        Random rand; 
+
         public string name;
         public int coins = 0;
         public int health = 10;
@@ -16,6 +18,26 @@ namespace TestTextAdventureExample
         public int weaponValue = 1;
         public int potions = 5;
 
+
+        public int mods = 0;
+
+        public int GetHealth () // Modifier for the boss fights to increase power. 
+        {
+            int upper = (2 * mods + 7);
+            int lower = (mods + 2);
+
+            return rand.Next(lower, upper);
+
+        }
+
+        public int GetPower() // Modifier for the boss fights to increase power. 
+        {
+            int upper = (2 * mods + 2);
+            int lower = (mods + 1);
+
+            return rand.Next(lower, upper);
+
+        }
 
 
     }
