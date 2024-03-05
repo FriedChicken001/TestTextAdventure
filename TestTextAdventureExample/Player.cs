@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace TestTextAdventureExample
 {
+    [Serializable]
     public class Player
     {
         Random rand; 
 
         public string name;
-        public int coins = 0;
+        public int id; //we'll use this to create unique ids for player saves
+        public int coins = 30;
         public int health = 10;
         public int damage = 1;
         public int armorValue = 0;
