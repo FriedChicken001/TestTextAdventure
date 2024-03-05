@@ -46,6 +46,7 @@ namespace TestTextAdventureExample
                 Console.WriteLine("=========================================");// player stats for educated purchases
                 Console.WriteLine("|             "+p.name+"'s Stats        |");
                 Console.WriteLine("| Current Health: " + p.health +       "|");
+                Console.WriteLine("| Coins: " + p.coins +                 "|");
                 Console.WriteLine("| Weapon Strength: " + p.weaponValue + "|");
                 Console.WriteLine("| Armor Class: " + p.armorValue +      "|");
                 Console.WriteLine("| Potions: " +p.potions +              "|");

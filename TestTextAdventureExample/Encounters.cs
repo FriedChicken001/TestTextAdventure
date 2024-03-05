@@ -342,6 +342,7 @@ namespace TestTextAdventureExample
                         Console.ReadKey();
                         Shop.LoadShop(Program.currentPlayer);
                         // we want to go to store
+
                     }
 
                 }
