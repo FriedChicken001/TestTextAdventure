@@ -6,14 +6,20 @@ using System.Threading.Tasks;
 
 namespace TestTextAdventureExample
 {
-    class Program
-    {
+  public class Program
+  {
         public static Player currentPlayer = new Player(); //creates a new instance of a player
+        public static bool mainLoop = true;
        
         static void Main(string[] args)
         {
             Start();
             Encoutners.FirstEncounter();
+            while (mainLoop) 
+            {
+                Encoutners.RandomEncounter();
+            }
+
         }
 
         // we want our game to only start once
@@ -44,5 +50,5 @@ namespace TestTextAdventureExample
 
             
         }
-    }
+  }
 }
